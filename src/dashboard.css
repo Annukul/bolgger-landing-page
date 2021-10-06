@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=IBM+Plex+Sans&family=Inria+Sans&family=Julius+Sans+One&family=KoHo&display=swap");
+:root {
+  --encore-: "Encode Sans", sans-serif;
+  --ibm-heading-: "IBM Plex Sans", sans-serif;
+  --inria-heading-: "Inria Sans", sans-serif;
+  --julius-: "Julius Sans One", sans-serif;
+  --koho-: "KoHo", sans-serif;
+  --green-: #008078;
+  --orange-: #ef495d;
+  --grey-: #26292c;
+  --dashcontent-color-: #f1f1f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  max-width: 100vw;
+}
+
+a {
+  font-family: var(--inria-heading-);
+  color: black;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+}
+
+.dashhead {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px 10px;
+  background: var(--orange-);
+  position: fixed;
+}
+.dashhead ul {
+  display: flex;
+  align-items: center;
+}
+.dashhead ul li a {
+  color: white;
+}
+.dash_mv a {
+  font-size: 1rem;
+  margin-left: 30px;
+}
+.dashlogo {
+  width: 30px;
+  height: 30px;
+}
+
+.dashbar-content {
+  display: flex;
+  width: 100%;
+}
+.dashbar {
+  width: 13%;
+  height: 92.5vh;
+  background: var(--orange-);
+  position: fixed;
+  margin-top: 45px;
+}
+.dashbar_one {
+  margin-bottom: 30px;
+}
+.dashbar_two {
+  margin-bottom: 30px;
+}
+.dashbar ul {
+  width: 100%;
+}
+.dashbar ul li {
+  display: block;
+  width: 100%;
+  padding: 4px 0px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-left: 5px solid var(--orange-);
+  transition: all 0.3s ease-in-out;
+}
+.dashbar ul li svg {
+  margin-left: 10px;
+  color: white;
+}
+.dashbar_link {
+  margin-left: 10px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.dashbar ul li:hover {
+  background-color: var(--grey-);
+  border-left: 5px solid white;
+}
+.dashbar ul li:hover > .dashbar_link {
+  margin-left: 25px;
+}
+
+/* DASH CONTENT */
+.dashcontent {
+  width: 87%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin-left: 13%;
+  background: var(--dashcontent-color-);
+}
+.dashcontent_head {
+  font-family: var(--inria-heading-);
+  font-size: 2rem;
+}
+.dashcontent_posts_head {
+  font-family: var(--inria-heading-);
+  margin-bottom: 15px;
+}
+.dashcontent_posts {
+  padding: 10px 20px;
+}
+.dashcontent_post_heading {
+  font-family: var(--inria-heading-);
+}

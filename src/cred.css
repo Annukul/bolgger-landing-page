@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Noto+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  width: 100vw;
+  background: #dae0e6;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+}
+a:hover {
+  color: grey;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+}
+
+/*========================== LOGIN PAGE ==============================*/
+.login_container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.login_form {
+  width: 45%;
+}
+.login_form_inside {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px 20px;
+  align-items: flex-start;
+}
+.login_head {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+.signup_head {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+.grey_head {
+  color: #c2b121;
+}
+.login_message {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 50px;
+}
+.signup_message {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+}
+.form_inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form_inputs label {
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 5px;
+}
+.form_inputs input {
+  height: 50px;
+  width: 350px;
+  border: 3px solid rgb(190, 186, 186);
+  border-radius: 4px;
+  transition: box-shadow 0.1s ease-in-out;
+  padding: 0 5px;
+}
+.form_inputs input:focus {
+  border: 3px solid #c2b121;
+  box-shadow: 5px 5px 10px grey;
+  outline: none;
+  height: 50px;
+  width: 350px;
+}
+.rm_fp {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+.rm_fp a:hover {
+  text-decoration: underline;
+}
+.form_submits button {
+  border: 3px solid #c2b121;
+  background: #c2b121;
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+.form_submits a {
+  border: 3px solid grey;
+  background: #fff;
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  margin-left: 50px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+/*------------ LOGIN IMAGE --------------*/
+.login_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.login_image nav {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  color: white;
+}
+nav a,
+footer a {
+  color: grey;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  padding: 10px 15px;
+}
+nav a:hover,
+footer a:hover {
+  color: #c2b121;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  color: grey;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+}
